@@ -303,18 +303,12 @@ textarea,
 
 .hero-art {
   position: absolute;
-  top: 48%;
-  right: -70px;
-  bottom: auto;
-  left: auto;
+  top: 50%;
+  right: 50px;
   z-index: 1;
-  display: grid;
-  width: min(calc(76% + 60px), 1180px);
-  min-height: 0;
+  width: 360px;
   pointer-events: none;
-  align-items: center;
-  justify-items: end;
-  transform: translateY(-44%);
+  transform: translateY(-50%);
 }
 
 .hero-art img {
@@ -1473,8 +1467,14 @@ textarea,
   }
 
   .hero-art img {
-    width: 100%;
-    transform: translateY(-56px) scale(1.06);
+      width: 100%;
+      height: auto;
+
+      filter:
+          drop-shadow(0 0 20px rgba(255,143,216,.75))
+          drop-shadow(0 0 50px rgba(255,143,216,.45));
+
+      transform: none;
   }
 
   .order-panel {
