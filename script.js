@@ -9,8 +9,7 @@ const menuCategories = [
       { id: "hot-cocoa", name: "Hot Cocoa", image: "images/hot-cocoa.png", price: 150 },
       { id: "lovely-hot-cocoa", name: "Lovely Hot Cocoa", image: "images/lovely-hot-cocoa.png", price: 150 },
       { id: "sweet-herbal-tea", name: "Sweet Herbal Tea", image: "images/sweet-herbal-tea.png", price: 150 },
-      { id: "booba-matcha", name: "Booba Tea (Matcha)", image: "images/booba-matcha.png", price: 150 },
-      { id: "booba-chai", name: "Booba Tea (Chai)", image: "images/booba-chai.png", price: 150 }
+      { id: "booba", name: "Booba Tea", image: "images/booba.png", price: 150 },
     ]
   },
 
@@ -23,10 +22,7 @@ const menuCategories = [
       { id: "doki-pancakes", name: "Doki Doki Pancakes", image: "images/doki-pancakes.png", price: 200 },
       { id: "ginger-kitty-cookie", name: "Ginger Kitty Cookie", image: "images/ginger-kitty-cookie.png", price: 200 },
       { id: "ballaberry-cupcake", name: "Ballaberry Cupcake", image: "images/ballaberry-cupcake.png", price: 200 },
-      { id: "cat-macaroon-pink", name: "Cat Macaroon (Pink)", image: "images/cat-macaroon-pink.png", price: 200 },
-      { id: "cat-macaroon-blue", name: "Cat Macaroon (Blue)", image: "images/cat-macaroon-blue.png", price: 200 },
-      { id: "cat-macaroon-green", name: "Cat Macaroon (Green)", image: "images/cat-macaroon-green.png", price: 200 },
-      { id: "cat-macaroon-brown", name: "Cat Macaroon (Brown)", image: "images/cat-macaroon-brown.png", price: 200 },
+      { id: "cat-macaroon", name: "Cat Macaroon", image: "images/cat-macaroon.png", price: 200 },
       { id: "meowchi-mochi", name: "Meowchi Mochi", image: "images/meowchi-mochi.png", price: 200 },
       { id: "oxygen-cake", name: "Oxygen Cake", image: "images/oxygen-cake.png", price: 200 },
       { id: "perfect-parfait", name: "Perfect Parfait", image: "images/perfect-parfait.png", price: 200 },
