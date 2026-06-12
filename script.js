@@ -133,8 +133,9 @@ function renderCart() {
   if (items.length === 0) {
     cartItems.innerHTML = `
       <div class="empty-cart">
-        <span class="empty-cart-icon" aria-hidden="true">&#128722;</span>
-        <span>Your cart is empty.</span>
+          <img src="images/empty-cat.png" class="empty-cart-icon" alt="Cute cat">
+          <p>Your cart is empty!</p>
+          <span>Add some yummy treats! ♡</span>
       </div>
     `;
   } else {
