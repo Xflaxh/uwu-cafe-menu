@@ -1,6 +1,7 @@
 const menuCategories = [
   {
     id: "drinks",
+    icon: "images/uwudrinks.png",
     title: "Drinks",
     priceBadge: 150,
     items: [
@@ -15,6 +16,7 @@ const menuCategories = [
 
   {
     id: "desserts",
+    icon: "images/uwudessert.png",
     title: "Desserts",
     priceBadge: 200,
     items: [
