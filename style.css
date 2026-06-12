@@ -739,14 +739,12 @@ textarea,
 .empty-cart {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  min-height: 100%;
-  padding: 18px 12px;
+  gap: 12px;
+  padding: 20px 10px;
+  min-height: 140px;
   color: var(--muted);
-  font-size: 0.9rem;
   text-align: center;
 }
 
@@ -1504,9 +1502,12 @@ textarea,
   }
 
   .cart-body {
-    height: 320px;
-    flex: 0 0 320px;
-    min-height: 0;
+    min-height: 140px;
+    transition: min-height 0.3s ease;
+  }
+
+  .cart-body:has(.cart-item) {
+    min-height: 350px;
   }
 }
 
