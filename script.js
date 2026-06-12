@@ -1,71 +1,56 @@
 const menuCategories = [
   {
     id: "drinks",
-    icon: "images/category-drinks.png",
     title: "Drinks",
     priceBadge: 150,
-    fallback: "",
     items: [
-      { id: "lemonade", name: "Lemonade", image: "images/lemonade.png", price: 150 },
-      { id: "coffee", name: "Coffee", image: "images/coffee.png", price: 150 },
-      { id: "iced-tea", name: "Iced Tea", image: "images/iced-tea.png", price: 150 },
-      { id: "milkshake", name: "Milkshake", image: "images/milkshake.png", price: 150 },
-      { id: "soda", name: "Soda", image: "images/soda.png", price: 150 }
+      { id: "matcha-coffee", name: "Matcha Coffee", image: "images/matcha-coffee.png", price: 150 },
+      { id: "hot-cocoa", name: "Hot Cocoa", image: "images/hot-cocoa.png", price: 150 },
+      { id: "lovely-hot-cocoa", name: "Lovely Hot Cocoa", image: "images/lovely-hot-cocoa.png", price: 150 },
+      { id: "sweet-herbal-tea", name: "Sweet Herbal Tea", image: "images/sweet-herbal-tea.png", price: 150 },
+      { id: "booba-matcha", name: "Booba Tea (Matcha)", image: "images/booba-matcha.png", price: 150 },
+      { id: "booba-chai", name: "Booba Tea (Chai)", image: "images/booba-chai.png", price: 150 }
     ]
   },
+
   {
     id: "desserts",
-    icon: "images/category-desserts.png",
     title: "Desserts",
-    priceBadge: 250,
-    fallback: "",
+    priceBadge: 200,
     items: [
-      { id: "apple-pie", name: "Applesaurus Pie", image: "images/apple-pie.png", price: 250 },
-      { id: "muffin", name: "Meteor Muffin", image: "images/muffin.png", price: 250 },
-      { id: "dino-dough", name: "Dino Dough", image: "images/dino-dough.png", price: 250 },
-      { id: "sundae", name: "Sundae", image: "images/sundae.png", price: 250 },
-      { id: "waffle-cone", name: "Waffle Cone", image: "images/waffle-cone.png", price: 250 },
-      { id: "cookie", name: "Veloci Treat Cookie", image: "images/cookie.png", price: 250 }
+      { id: "doki-pancakes", name: "Doki Doki Pancakes", image: "images/doki-pancakes.png", price: 200 },
+      { id: "ginger-kitty-cookie", name: "Ginger Kitty Cookie", image: "images/ginger-kitty-cookie.png", price: 200 },
+      { id: "ballaberry-cupcake", name: "Ballaberry Cupcake", image: "images/ballaberry-cupcake.png", price: 200 },
+      { id: "cat-macaroon-pink", name: "Cat Macaroon (Pink)", image: "images/cat-macaroon-pink.png", price: 200 },
+      { id: "cat-macaroon-blue", name: "Cat Macaroon (Blue)", image: "images/cat-macaroon-blue.png", price: 200 },
+      { id: "cat-macaroon-green", name: "Cat Macaroon (Green)", image: "images/cat-macaroon-green.png", price: 200 },
+      { id: "cat-macaroon-brown", name: "Cat Macaroon (Brown)", image: "images/cat-macaroon-brown.png", price: 200 },
+      { id: "meowchi-mochi", name: "Meowchi Mochi", image: "images/meowchi-mochi.png", price: 200 },
+      { id: "oxygen-cake", name: "Oxygen Cake", image: "images/oxygen-cake.png", price: 200 },
+      { id: "perfect-parfait", name: "Perfect Parfait", image: "images/perfect-parfait.png", price: 200 },
+      { id: "strawberry-shortcake", name: "Strawberry Shortcake", image: "images/strawberry-shortcake.png", price: 200 }
     ]
   },
+
   {
-    id: "picks",
-    icon: "images/category-picks.png",
-    title: "Rex's Picks",
-    priceBadge: 300,
+    id: "lunch-dinner",
+    title: "Lunch / Dinner",
+    priceBadge: 350,
     items: [
-      { id: "rex-original", name: "Rex's Original", image: "images/burger-original.png", price: 300 },
-      { id: "blt", name: "BLT", image: "images/blt.png", price: 300 },
-      { id: "double-burger", name: "Rex's Double", image: "images/double-burger.png", price: 300 },
-      { id: "jurassic-patty", name: "Jurassic Patty", image: "images/jurassic-patty.png", price: 300 },
-      { id: "stego-stacker", name: "Stego Stacker", image: "images/stego-stacker.png", price: 300 },
-      { id: "taco", name: "T-Rex Taco", image: "images/taco.png", price: 300 },
-      { id: "wrap", name: "Raptor Wrap", image: "images/wrap.png", price: 300 },
-      { id: "chicken", name: "Tricera Chick", image: "images/chicken.png", price: 300 },
-      { id: "nuggets", name: "Dino Nuggies", image: "images/nuggets.png", price: 300 }
+      { id: "hamburg-steak", name: "Hamburg Steak", image: "images/hamburg-steak.png", price: 350 },
+      { id: "kari-kari-curry", name: "Kari Kari Curry", image: "images/kari-kari-curry.png", price: 350 },
+      { id: "om-nom-omurice", name: "Om-Nom Omurice", image: "images/om-nom-omurice.png", price: 350 },
+      { id: "sugoi-katsu-sando", name: "Sugoi Katsu Sando", image: "images/sugoi-katsu-sando.png", price: 350 }
     ]
   },
+
   {
-    id: "sides",
-    icon: "images/category-sides.png",
-    title: "Sides",
-    priceBadge: 100,
-    fallback: "",
-    items: [
-      { id: "fries", name: "Fries", image: "images/fries.png", price: 100 },
-      { id: "onion-rings", name: "Onion Rings", image: "images/onion-rings.png", price: 100 }
-    ]
-  },
-  {
-    id: "favorites",
-    icon: "images/category-favorites.png",
-    title: "Customer Favorite",
+    id: "specials",
+    title: "Specials",
     showItemPrices: true,
-    fallback: "",
     items: [
-      { id: "combo", name: "Dino Nuggies and Milkshake", image: "images/combo.png", price: 425 },
-      { id: "nuggets", name: "Dino Nuggies", image: "images/nuggets.png", price: 300 },
-      { id: "milkshake", name: "Milkshake", image: "images/milkshake.png", price: 150 }
+      { id: "bento-meal", name: "Bento Meal (Drink + Lunch/Dinner + Dessert + Rice Ball)", image: "images/bento-meal.png", price: 800 },
+      { id: "mystery-box", name: "Mystery Box", image: "images/mystery-box.png", price: 50000 }
     ]
   }
 ];
