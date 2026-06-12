@@ -9,6 +9,7 @@ const menuCategories = [
       { id: "hot-cocoa", name: "Hot Cocoa", image: "images/hot-cocoa.png", price: 150 },
       { id: "lovely-hot-cocoa", name: "Lovely Hot Cocoa", image: "images/lovely-hot-cocoa.png", price: 150 },
       { id: "sweet-herbal-tea", name: "Sweet Herbal Tea", image: "images/sweet-herbal-tea.png", price: 150 },
+      { id: "perfect-parfait", name: "Perfect Parfait", image: "images/perfect-parfait.png", price: 200 },
       { id: "booba", name: "Booba Tea", image: "images/booba.png", price: 150 },
     ]
   },
@@ -25,7 +26,6 @@ const menuCategories = [
       { id: "cat-macaroon", name: "Cat Macaroon", image: "images/cat-macaroon.png", price: 200 },
       { id: "meowchi-mochi", name: "Meowchi Mochi", image: "images/meowchi-mochi.png", price: 200 },
       { id: "oxygen-cake", name: "Oxygen Cake", image: "images/oxygen-cake.png", price: 200 },
-      { id: "perfect-parfait", name: "Perfect Parfait", image: "images/perfect-parfait.png", price: 200 },
       { id: "strawberry-shortcake", name: "Strawberry Shortcake", image: "images/strawberry-shortcake.png", price: 200 }
     ]
   },
@@ -38,6 +38,7 @@ const menuCategories = [
       { id: "hamburg-steak", name: "Hamburg Steak", image: "images/hamburg-steak.png", price: 350 },
       { id: "kari-kari-curry", name: "Kari Kari Curry", image: "images/kari-kari-curry.png", price: 350 },
       { id: "om-nom-omurice", name: "Om-Nom Omurice", image: "images/om-nom-omurice.png", price: 350 },
+      { id: "Rice-Ball", name: "Rice Ball", image: "images/rice-ball.png", price: 350 },
       { id: "sugoi-katsu-sando", name: "Sugoi Katsu Sando", image: "images/sugoi-katsu-sando.png", price: 350 }
     ]
   },
