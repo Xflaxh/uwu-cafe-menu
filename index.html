@@ -1,32 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UwU Café</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rex's Diner</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>💖 UwU Café</h1>
 
-<div class="buttons">
-<button onclick="applyDiscount(10)">10% Discount</button>
-<button onclick="customDiscount()">Custom Discount</button>
+<header class="site-header">
+    <a href="#" class="logo">
+        <span class="logo-rex">Rex's</span>
+        <span class="logo-diner">Diner</span>
+    </a>
+</header>
+
+<div class="page-shell">
+
+    <main class="main-content">
+
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">WELCOME BACK!</p>
+
+                <h1>
+                    Good food.<br>
+                    Good times.<br>
+                    Only at <span>Rex's.</span>
+                </h1>
+
+                <div class="hero-actions">
+                    <button id="autoDiscountBtn" class="outline-action">
+                        <span class="discount-icon">$</span>
+                        Auto 10% Discount
+                    </button>
+
+                    <button id="customDiscountBtn" class="outline-action">
+                        <span class="discount-icon">%</span>
+                        Custom Discount
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-art fallback-frame">
+                <img src="images/hero-food.png" alt="Rex's Diner">
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 class="section-heading">Menu</h2>
+
+            <div id="menuGrid" class="menu-grid">
+                <!-- JS populates menu -->
+            </div>
+        </section>
+
+    </main>
+
+    <aside class="order-panel">
+
+        <div class="order-card">
+
+            <header class="order-header">
+                <h2>
+                    <span>🛒</span>
+                    Your Order
+                </h2>
+
+                <span id="orderCount" class="order-count">
+                    0 items
+                </span>
+            </header>
+
+            <div id="cartItems" class="cart-body">
+                <!-- JS populates cart -->
+            </div>
+
+            <div class="totals">
+
+                <div class="total-row">
+                    <span>Subtotal</span>
+                    <strong id="subtotalAmount">$0</strong>
+                </div>
+
+                <div class="total-row discount-row">
+                    <span id="discountLabel">Discount (0%)</span>
+                    <strong id="discountAmount">$0</strong>
+                </div>
+
+                <div class="total-row grand-total">
+                    <span>Total</span>
+                    <strong id="totalAmount">$0</strong>
+                </div>
+
+            </div>
+
+            <div class="cart-actions">
+
+                <button
+                    id="copyTotalBtn"
+                    class="cart-action-btn cart-action-btn--primary">
+
+                    <span class="cart-action-btn__icon">📋</span>
+                    <span class="cart-action-btn__label">
+                        Copy Price
+                    </span>
+
+                </button>
+
+                <button
+                    id="clearCartBtn"
+                    class="cart-action-btn cart-action-btn--secondary">
+
+                    <span class="cart-action-btn__icon">🗑</span>
+                    <span class="cart-action-btn__label">
+                        Clear Cart
+                    </span>
+
+                </button>
+
+            </div>
+
+            <div class="savings-box">
+                <div class="savings-icon">💸</div>
+
+                <div>
+                    <p id="savingsTitle">
+                        No discount applied.
+                    </p>
+
+                    <small>
+                        Confirm order details with customer.
+                    </small>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
 </div>
 
-<div id="menu"></div>
+<div id="discountModal" class="discount-modal" hidden>
 
-<div class="order">
-<h2>Your Order</h2>
-<div id="cart"></div>
-<p>Subtotal: <span id="subtotal">$0</span></p>
-<p>Discount: <span id="discount">$0</span></p>
-<p>Total: <span id="total">$0</span></p>
+    <div class="discount-modal__backdrop" data-discount-close></div>
 
-<button onclick="copyTotal()">Copy Price</button>
-<button onclick="clearCart()">Clear Cart</button>
+    <div class="discount-dialog">
+
+        <div class="discount-dialog__header">
+
+            <div class="discount-dialog__icon">
+                %
+            </div>
+
+            <h2>Custom Discount</h2>
+
+            <button
+                type="button"
+                class="discount-dialog__close"
+                data-discount-close>
+                ×
+            </button>
+
+        </div>
+
+        <form id="discountForm">
+
+            <label class="discount-field">
+
+                Discount %
+
+                <div class="discount-input-wrap">
+
+                    <input
+                        id="discountInput"
+                        type="number"
+                        min="0"
+                        max="100">
+
+                    <div class="discount-stepper">
+
+                        <button
+                            type="button"
+                            data-discount-step="1">
+                            +
+                        </button>
+
+                        <button
+                            type="button"
+                            data-discount-step="-1">
+                            -
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </label>
+
+            <p id="discountHelp" class="discount-help">
+                Enter a whole number from 0 to 100.
+            </p>
+
+            <div class="discount-dialog__actions">
+
+                <button
+                    type="button"
+                    class="discount-cancel"
+                    data-discount-close>
+                    Cancel
+                </button>
+
+                <button
+                    type="submit"
+                    class="discount-apply">
+                    Apply
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
