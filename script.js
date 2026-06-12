@@ -32,6 +32,7 @@ const menuCategories = [
 
   {
     id: "lunch-dinner",
+    icon: "images/uwulunch.png",
     title: "Lunch / Dinner",
     priceBadge: 350,
     items: [
@@ -45,6 +46,7 @@ const menuCategories = [
 
   {
     id: "specials",
+    icon: "images/uwuspecial.png",
     title: "Specials",
     showItemPrices: true,
     items: [
