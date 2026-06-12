@@ -3,30 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UwU Café Ordering</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+<title>UwU Café</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header"><h1>💖 UwU Café 💖</h1></header>
-<main class="page-shell">
-<div>
-<section class="hero">
-<div>
-<h2>Welcome Senpai!</h2>
-<h1>Cute food. Cozy vibes.<br>Only at UwU Café ♡</h1>
+<h1>💖 UwU Café</h1>
+
+<div class="buttons">
+<button onclick="applyDiscount(10)">10% Discount</button>
+<button onclick="customDiscount()">Custom Discount</button>
 </div>
-</section>
-<div id="menu" class="menu-grid"></div>
-</div>
-<aside class="order-card">
-<h2>🧁 Your Tray</h2>
+
+<div id="menu"></div>
+
+<div class="order">
+<h2>Your Order</h2>
 <div id="cart"></div>
-<h3>Total: $<span id="total">0</span></h3>
-<button onclick="copyTotal()">Copy Total</button>
-<button onclick="clearCart()">Clear Tray</button>
-</aside>
-</main>
+<p>Subtotal: <span id="subtotal">$0</span></p>
+<p>Discount: <span id="discount">$0</span></p>
+<p>Total: <span id="total">$0</span></p>
+
+<button onclick="copyTotal()">Copy Price</button>
+<button onclick="clearCart()">Clear Cart</button>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
