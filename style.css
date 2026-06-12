@@ -1,1 +1,8 @@
 
+body{font-family:Arial,sans-serif;background:#111827;color:white;margin:0}
+.hero{text-align:center;padding:30px;background:#23152f}
+.layout{display:flex;gap:20px;padding:20px}
+#menu{flex:2}
+.cart{flex:1;background:#1f2937;padding:20px;border-radius:12px}
+.card{background:#1f2937;margin:10px 0;padding:12px;border-radius:12px;display:flex;justify-content:space-between}
+button{background:#ff69b4;border:none;padding:8px 12px;border-radius:8px;color:white;cursor:pointer}

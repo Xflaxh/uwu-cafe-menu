@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UwU Café</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+<h1>UwU Café</h1>
+<p>Los Santos' cutest café serving drinks, desserts, and meals.</p>
+<div class="actions">
+<button onclick="applyDiscount(10)">10% Discount</button>
+<button onclick="customDiscount()">Custom Discount</button>
+</div>
+</header>
 
+<div class="layout">
+<div id="menu"></div>
+
+<div class="cart">
+<h2>Your Order</h2>
+<div id="cartItems"></div>
+<p>Subtotal: <span id="subtotal">0</span></p>
+<p>Discount: <span id="discount">0%</span></p>
+<h3>Total: <span id="total">0</span></h3>
+<button onclick="copyPrice()">Copy Price</button>
+<button onclick="clearCart()">Clear Cart</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
