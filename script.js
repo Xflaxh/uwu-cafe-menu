@@ -133,7 +133,7 @@ function renderCart() {
   if (items.length === 0) {
     cartItems.innerHTML = `
       <div class="empty-cart">
-          <img src="images/empty-cat.png" class="empty-cart-icon" alt="Cute cat">
+          <img src="images/empty-cart.png" class="empty-cart-icon" alt="Cute cat">
           <p>Your cart is empty!</p>
           <span>Add some yummy treats! ♡</span>
       </div>
