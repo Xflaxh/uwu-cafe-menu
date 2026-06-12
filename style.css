@@ -230,6 +230,10 @@ textarea,
   margin: 12px 0;
 }
 
+.hero-actions .outline-action {
+  flex: 1;
+}
+
 .outline-action {
   display: inline-flex;
   align-items: center;
