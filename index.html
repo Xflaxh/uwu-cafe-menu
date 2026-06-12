@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>UwU Café</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="hero">
-<h1>UwU Café</h1>
-<p>Los Santos' cutest café serving drinks, desserts, and meals.</p>
-<div class="actions">
-<button onclick="applyDiscount(10)">10% Discount</button>
-<button onclick="customDiscount()">Custom Discount</button>
+<div class="top">
+  <div class="hero-text">
+    <div class="eyebrow">WELCOME BACK!</div>
+    <h1>Cute food.<br>Cute vibes.<br>Only at <span>UwU Café.</span></h1>
+    <div class="btns">
+      <button onclick="applyDiscount(10)">10% Discount</button>
+      <button onclick="customDiscount()">Custom Discount</button>
+    </div>
+  </div>
+  <div class="hero-logo">
+    <img src="assets/image.png" alt="UwU Logo">
+  </div>
+  <aside class="cart">
+    <h2>🛒 Your Order</h2>
+    <div id="cartItems"></div>
+    <div class="totals">
+      <p>Subtotal <span id="subtotal">0</span></p>
+      <p>Discount (<span id="disc">0</span>%) <span id="discountAmt">0</span></p>
+      <h3>Total <span id="total">0</span></h3>
+    </div>
+    <button class="big" onclick="copyPrice()">Copy Price</button>
+    <button class="clear" onclick="clearCart()">Clear Cart</button>
+  </aside>
 </div>
-</header>
-
-<div class="layout">
-<div id="menu"></div>
-
-<div class="cart">
-<h2>Your Order</h2>
-<div id="cartItems"></div>
-<p>Subtotal: <span id="subtotal">0</span></p>
-<p>Discount: <span id="discount">0%</span></p>
-<h3>Total: <span id="total">0</span></h3>
-<button onclick="copyPrice()">Copy Price</button>
-<button onclick="clearCart()">Clear Cart</button>
-</div>
-</div>
-
+<div id="categories"></div>
 <script src="script.js"></script>
 </body>
 </html>
