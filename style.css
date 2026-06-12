@@ -2,11 +2,11 @@
   --bg: #020b10;
   --panel: rgba(5, 17, 24, 0.86);
   --panel-soft: rgba(255, 255, 255, 0.045);
-  --border: rgba(166, 199, 211, 0.24);
-  --pink: #ff1f70;
-  --orange: #ff4a2d;
+  --border: rgba(255, 143, 216, 0.35);
+  --pink: #ff8fd8;
+  --orange: #d7b4ff;
   --text: #fff8f1;
-  --muted: #9caab3;
+  --muted: #c8b6ff;
 }
 
 * {
