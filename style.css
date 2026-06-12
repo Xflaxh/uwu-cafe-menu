@@ -1045,12 +1045,20 @@ textarea,
 }
 
 .cart-action-btn--primary {
-  border: 1px solid rgba(255, 226, 220, 0.24);
-  background: linear-gradient(135deg, rgba(255, 31, 112, 0.98), rgba(255, 74, 45, 0.95));
+  border: 1px solid rgba(255, 220, 245, 0.45);
+  background:
+    linear-gradient(135deg, #ff9ed9, #c89cff);
+
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.22),
-    0 14px 30px rgba(255, 31, 112, 0.24),
-    0 0 18px rgba(255, 74, 45, 0.11);
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 10px 22px rgba(255, 158, 217, 0.45),
+    0 0 20px rgba(200, 156, 255, 0.45);
+}
+.cart-action-btn--primary .cart-action-btn__icon {
+  color: #fff;
+  background:
+    radial-gradient(circle at 35% 18%, rgba(255,255,255,0.15), transparent 50%),
+    rgba(155, 100, 255, 0.45);
 }
 
 .cart-action-btn--primary .cart-action-btn__icon {
@@ -1061,14 +1069,20 @@ textarea,
 }
 
 .cart-action-btn--secondary {
-  color: #fff8f1;
-  border: 1px solid rgba(255, 31, 112, 0.62);
+  color: #fff;
+  border: 1px solid rgba(255, 180, 230, 0.4);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.012)),
-    rgba(3, 15, 22, 0.84);
+    linear-gradient(180deg, rgba(255, 180, 230, 0.18), rgba(200, 156, 255, 0.12)),
+    rgba(30, 15, 45, 0.75);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 8px 20px rgba(0, 0, 0, 0.2);
+    inset 0 1px 0 rgba(255,255,255,0.15),
+    0 8px 20px rgba(255, 158, 217, 0.2);
+}
+.cart-action-btn--secondary .cart-action-btn__icon {
+  color: #ffd9f4;
+  background:
+    radial-gradient(circle at 40% 18%, rgba(255,255,255,0.12), transparent 52%),
+    rgba(255, 158, 217, 0.18);
 }
 
 .cart-action-btn--secondary .cart-action-btn__icon {
