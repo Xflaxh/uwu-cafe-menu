@@ -114,7 +114,6 @@ textarea,
   color: var(--pink);
   font-family: 'Ex Rounded Bold', Arial, sans-serif;
   font-size: clamp(2.35rem, 5.6vw, 4.55rem);
-  font-style: italic;
   font-weight: 700;
   animation: rex-neon-pulse 3.8s ease-in-out infinite;
   text-shadow:
