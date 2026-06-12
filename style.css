@@ -1,12 +1,13 @@
 :root {
-  --bg: #020b10;
-  --panel: rgba(5, 17, 24, 0.86);
-  --panel-soft: rgba(255, 255, 255, 0.045);
-  --border: rgba(255, 143, 216, 0.35);
-  --pink: #ff8fd8;
-  --orange: #d7b4ff;
-  --text: #fff8f1;
-  --muted: #c8b6ff;
+  --bg: #0b0215;
+  --panel: rgba(26, 6, 42, 0.88);
+  --panel-soft: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 98, 203, 0.55);
+  --pink: #ff5ecf;
+  --pink-light: #ff9ee6;
+  --purple: #9c4dff;
+  --text: #fff7ff;
+  --muted: #e3b7ff;
 }
 
 @font-face {
@@ -32,9 +33,10 @@ body {
   margin: 0;
   color: var(--text);
   font-family: 'Ex Rounded Bold', Arial, sans-serif;
-  background:
-    radial-gradient(circle at 8% 92%, rgba(89, 185, 224, 0.18), transparent 34rem),
-    linear-gradient(135deg, #020b10 0%, #031017 52%, #010406 100%);
+background:
+  radial-gradient(circle at 20% 10%, rgba(255, 70, 190, 0.18), transparent 35rem),
+  radial-gradient(circle at 80% 20%, rgba(150, 70, 255, 0.15), transparent 30rem),
+  linear-gradient(135deg, #070011 0%, #120320 45%, #050009 100%);
   overflow-x: hidden;
 }
 
@@ -44,7 +46,7 @@ body::before {
   z-index: -1;
   pointer-events: none;
   content: "";
-  opacity: 0.18;
+  opacity: 0.08;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
