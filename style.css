@@ -84,44 +84,56 @@ textarea,
 .site-header {
   position: relative;
   display: grid;
-  min-height: 96px;
   place-items: center;
-  padding: 16px 18px 15px;
-  border-bottom: 1px solid rgba(255, 31, 112, 0.28);
-  background: rgba(2, 10, 15, 0.9);
-  box-shadow: none;
+  min-height: 125px;
+  padding: 18px 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(25, 5, 45, 0.85),
+      rgba(8, 1, 15, 0.9)
+    );
+
+  border-bottom: 2px solid rgba(255, 80, 200, 0.8);
+
+  box-shadow:
+    0 0 20px rgba(255, 70, 200, 0.7),
+    0 0 40px rgba(255, 70, 200, 0.25);
 }
 
 .site-header::after {
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-  left: 0;
-  height: 1px;
   content: "";
-  background: linear-gradient(90deg, transparent, rgba(255, 31, 112, 0.42), rgba(255, 74, 45, 0.22), transparent);
-  box-shadow: none;
+  position: absolute;
+  bottom: -2px;
+  left: 15%;
+  width: 70%;
+  height: 3px;
+
+  background: #ff62cb;
+
+  box-shadow:
+    0 0 15px #ff62cb,
+    0 0 30px #ff62cb;
 }
 
 .logo {
   display: inline-flex;
   align-items: baseline;
-  gap: 12px;
-  color: var(--text);
+  gap: 18px;
   text-decoration: none;
-  line-height: 0.9;
+  line-height: 1;
 }
 
 .logo-rex {
-  color: var(--pink);
-  font-family: 'Ex Rounded Bold', Arial, sans-serif;
-  font-size: clamp(2.35rem, 5.6vw, 4.55rem);
-  font-weight: 700;
-  animation: rex-neon-pulse 3.8s ease-in-out infinite;
+  color: #ffe8fb;
+  font-size: clamp(4rem, 8vw, 6rem);
+  font-weight: 900;
+
   text-shadow:
-    0 0 8px rgba(255, 31, 112, 0.98),
-    0 0 22px rgba(255, 31, 112, 0.75),
-    0 0 42px rgba(255, 31, 112, 0.36);
+    0 0 10px #ff7edb,
+    0 0 25px #ff4fc9,
+    0 0 55px #ff28ba;
 }
 
 @keyframes rex-neon-pulse {
@@ -153,11 +165,14 @@ textarea,
 }
 
 .logo-diner {
-  color: var(--orange);
-  font-family: 'Ex Rounded Bold', Arial, sans-serif;
-  font-size: clamp(2rem, 4.8vw, 4rem);
+  color: #dcb4ff;
+  font-size: clamp(3rem, 6vw, 4.8rem);
   font-weight: 900;
-  text-shadow: none;
+
+  text-shadow:
+    0 0 10px #d98cff,
+    0 0 25px #b65cff,
+    0 0 50px #7f1fff;
 }
 
 .page-shell {
